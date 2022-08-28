@@ -1,0 +1,139 @@
+<%- include('_layouts/layout', { title: 'Contact' }); -%>
+  <!-- @meta -->
+  <meta name="description" content="Ehime Contact">
+  <!-- @@meta -->
+
+  <!-- @content -->
+  <main class="p-contact">
+    <section class="c-question">
+      <div class="l-questionwrap">
+        <div class="c-question__about">
+          <h1 class="c-question__abouttitle">CONTACT</h1>
+          <p class="c-question__abouttext">お問い合わせ</p>
+        </div>
+      </div>
+    </section>
+    <div class="l-conceptwrap">
+      <ul class="c-breadcrumb">
+        <li class="c-breadcrumb__item c-breadcrumb__itemindex">
+          <a href="/">ホーム</a>
+        </li>
+        <li class="c-breadcrumb__item">
+          <p>お問い合わせ</p>
+        </li>
+      </ul>
+    </div>
+    <section class="c-contact">
+      <div class="l-contactwrap">
+        <div class="c-contact__content">
+          <h2 class="c-contact__title">一般･学生の皆様へ</h2>
+          <p class="c-contact__subtitle">
+            この度は愛媛シゴト図鑑をご覧いただきありがとうございます。<br>
+            愛媛シゴト図鑑を見て疑問に思ったこと、ご質問等ございましたら下記の問い合わせフォームにて意見をお寄せください
+            。少し聞きづらいなと思うようなことも遠慮なくご質問ください。愛媛シゴト図鑑は頑張る就活生を応援しています！<br>
+            個人情報の取扱に関しましては、<a href="#" class="u-blue">プライバシーポリシー</a>をご確認ください。<br>
+            <span class="u-red">※は入力必須です。</span>
+          </p>
+          <small id="is-error1" class="u-error u-error1">入力内容を確認してください。</small>
+        </div>
+        <form action="" method="post" id="c-form" onsubmit="return checkValidate()">
+          <div class="c-form__item">
+            <label class="c-form__label" for="is-fullName">
+              氏名
+              <span class="u-red">※</span>
+            </label>
+            <input id="is-fullName" type="text" name="fullName" class="c-form__input c-form__input1">
+            <small class="u-error"></small>
+          </div>
+          <div class="c-form__item">
+            <label class="c-form__label">
+              会社･学校名
+            </label>
+            <input type="text" name="office" class="c-form__input c-form__input1">
+          </div>
+          <div class="c-form__item">
+            <label class="c-form__label">
+              住所
+            </label>
+            <input type="text" name="address" class="c-form__input">
+          </div>
+          <div class="c-form__item">
+            <label class="c-form__label" for="is-phoneNumber">
+              電話番号
+              <span class="u-red u-r">※</span>
+            </label>
+            <input id="is-phoneNumber" type="text" name="phoneNumber" class="c-form__input c-form__input1">
+            <small class="u-error"></small>
+          </div>
+          <div class="c-form__item">
+            <label class="c-form__label" for="is-email">
+              メールアドレス
+              <span class="u-red u-r">※</span>
+            </label>
+            <input id="is-email" type="text" name="email" class="c-form__input c-form__input1">
+            <small class="u-error"></small>
+          </div>
+          <div class="c-form__item">
+            <label class="c-form__label">
+              本サイトを知ったきっかけ
+            </label>
+            <div class="c-checkboxwrap">
+              <div class="c-box c-box1">
+                <label class="c-checkbox" for="c-lookup">
+                  <input type="checkbox" name="lookup" value="lookup" id="c-lookup">
+                  <span class="c-checkmark"></span> 
+                  検索 
+                </label>
+                <label class="c-checkbox" for="c-magazine">
+                  <input type="checkbox" name="magazine" value="magazine" id="c-magazine">
+                  <span class="c-checkmark"></span> 
+                  冊子 
+                </label>
+                <label class="c-checkbox" for="c-socialMedia">
+                  <input type="checkbox" name="socialMedia" value="socialMedia" id="c-socialMedia">
+                  <span class="c-checkmark"></span> 
+                  ネット広告 
+                </label>
+                <label class="c-checkbox" for="c-spoken">
+                  <input type="checkbox" name="spoken" value="spoken" id="c-spoken">
+                  <span class="c-checkmark"></span> 
+                  口コミ 
+                </label>
+                <label class="c-checkbox" for="c-poster">
+                  <input type="checkbox" name="poster" value="poster" id="c-poster">
+                  <span class="c-checkmark"></span> 
+                  チラシ 
+                </label>
+              </div>
+              <div class="c-box c-box2">
+                <label class="c-checkbox">
+                  <input type="checkbox">
+                  <span class="c-checkmark"></span> 
+                  検索 
+                </label>
+                <input type="text" name="other" class="c-form__input">
+              </div>
+            </div>
+          </div>
+          <div class="c-form__item c-form__itemlast">
+            <label class="c-form__label" for="is-request">
+              お問い合わせ内容
+              <span class="u-red u-r">※</span>
+            </label>
+            <textarea id="is-request" name="request" class="c-form__input" cols="30" rows="10"></textarea>
+            <small class="u-error"></small>
+          </div>
+          <div class="c-btn c-btnsubmit">
+            <button id="c-btnsubmit" type="submit" onclick="checkValidate()">
+              この内容で送信する
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    
+    <div class="c-backtotop">
+      <img src="./assets/img/icon_totop.png" alt="Icon Back To Top">
+    </div>
+  </main>
+  <!-- @@content -->

@@ -1,0 +1,102 @@
+<!-- START HEADER -->
+<header class="c-header">
+  <div class="l-headerwrap">
+    <!-- Header PC-->
+     <div class="c-header__pc">
+        <a href="#" class="c-header__partner">
+            掲載･取材依頼の企業様へ 
+        </a>
+      <div class="c-header__navi">
+          <div class="c-header__logo">
+              <a href="<%= BASE_URL %>index.html">
+                  <img src="./assets/img/logo.png" alt="Logo Ehime">
+              </a>
+          </div>
+          <nav class="c-gnav">
+            <ul class="c-gnavlist"><% if (typeof linklists != 'undefined') { %><% linklists.main && linklists.main.forEach(link=> { %>
+              <li class="c-gnavlistitem">
+                <a class="c-gnavlistlink" <% if (link.current || link.active) { %><% }%>href="<%= link.url %>"><%= link.title %></a>
+              </li><% }) %><% } %>
+              
+            </ul>
+            <div class="c-header__btncontact">
+              <a href="./contact.html">お問い合わせ</a>
+            </div>
+          </nav>
+      </div>
+    </div>  
+
+    <!-- Header Mobile -->
+    <div class="c-header__mb">
+      <div class="c-header__wrapper">
+        <div class="c-header__logo">
+          <a href="<%= BASE_URL %>index.html">
+            <img src="./assets/img/logo.png" alt="Logo Ehime">
+          </a>
+        </div>
+        <div class="c-header__menusp">
+          <div class="c-header__item c-header__itemgmail ">
+            <a href="#">
+              <img src="./assets/img/icon_gmail.png" alt="Icon Gmail">
+              <p>お問い合わせ</p>
+            </a>
+          </div>
+          <div class="c-header__item c-header__itemnavbar">
+            <div class="c-header__hamburger">
+              <img src="./assets/img/icon_navigation.png" alt="Icon Navigation">
+              <p>メニュー</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Navigation Bar Menu -->
+  <div class="c-header__side">
+    <div class="c-header__btnclose">
+      <img src="./assets/img/icon_close.png" alt="Icon Close">
+      <span>閉じる</span>
+    </div>
+    <div class="c-header__sidewrap">
+      <ul><% if (typeof linklistsmb != 'undefined') { %><% linklistsmb.mainmb && linklistsmb.mainmb.forEach(link=> { %>
+        <li class="c-header__sidewrapitem">
+          <a class="c-header__sidewraplink" <% if (link.current || link.active) { %>class="is-active"<% }%>href="<%= link.url %>"><%= link.title %></a>
+        </li><% }) %><% } %>
+      </ul>
+      <div class="c-header__contact">
+        <p class="c-header__contacttel">
+          <span>TEL.</span> 
+          <a href="tel:089-947-1411">089-947-1411</a>
+        </p>
+        <p class="c-header__contactwt">
+          受付時間 9:00〜17:00（平日のみ）
+        </p>
+      </div>
+      
+      <div class="c-header__terser">
+        <a class="c-header__clickhere">掲載・取材のご依頼についてはこちら</a>
+        <ul class="c-header__terserwrap">
+          <li>
+            <a href="#">
+              プライバシーポリシー
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              利用規約
+            </a>
+          </li>
+          <li class="c-header__terserwrapclose">
+            <a href="#">
+              閉じる
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</header>
+<!-- END HEADER -->

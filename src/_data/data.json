@@ -1,0 +1,55 @@
+{
+  "linklists": {
+    "main": [
+      {
+        "title": "企業一覧",
+        "url": "#"
+      },
+      {
+        "title": "愛媛シゴト図鑑とは",
+        "url": "about.html"
+      },
+      {
+        "title": "インタビュー",
+        "url": "#"
+      },
+      {
+        "title": "ニュース",
+        "url": "#"
+      }
+    ]
+  },
+  "linklistsmb": {
+    "mainmb": [
+      {
+        "title": "ホーム",
+        "url": "./"
+      },
+      {
+        "title": "企業一覧",
+        "url": "#"
+      },
+      {
+        "title": "愛媛シゴト図鑑とは",
+        "url": "about.html"
+      },
+      {
+        "title": "インタビュー",
+        "url": "#"
+      },
+      {
+        "title": "ニュース",
+        "url": "#"
+      },
+      {
+        "title": "運営会社",
+        "url": "#"
+      },
+      {
+        "title": "お問い合わせ",
+        "url": "contact.html"
+      }
+      
+    ]
+  }
+}

@@ -1,0 +1,262 @@
+/*------------------------------------------------------------
+footer
+------------------------------------------------------------*/
+.c-footer {
+    background-color: #00ada0;
+    color: #fff;
+}
+
+.c-post {
+    max-width: 1160px;
+    width: 98%;
+    margin: 0 auto;
+    @include sp {
+        width: 100%;
+    }
+
+    &__wrap {
+        display: flex;
+        @include sp {
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 32px;
+        }
+    }
+
+    &__intro {
+        width: 35%;
+        margin-right: 14px;
+        padding-top: 20px;
+        @include tab {
+            width: 27%;
+            margin-right: 10px;
+        }
+        @include sp {
+            order: 3;
+            margin-right: 0;
+            width: 100%;
+            padding-top: 36px;
+            text-align: center;
+            border-top: #91d6d1 1px solid;
+        }
+
+        &img {
+            max-width: 296px;
+            @include sp {
+                margin: 0 auto;
+                padding: 0 14px;
+            }
+
+            a {
+                display: block;
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+
+        &datail {
+            margin-top: 12px;
+            font-feature-settings: "palt" 1;
+            @include sp {
+                margin-top: 28px;
+            }
+        }
+
+        &title {
+            font-weight: 700;
+            font-size: 1.4rem;
+            line-height: 2;
+            margin-left: -2px;
+            letter-spacing: 0.01em;
+
+            span {
+                display: inline-block;
+            }
+            @include tab {
+                font-size: 1.2rem;
+            }
+            @include sp {
+                font-size: 1.3rem;
+                line-height: 1.4;
+            }
+        }
+
+        &text {
+            margin-left: -2px;
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 1.7;
+            letter-spacing: 0.01em;
+            font-feature-settings: "palt" 1;
+            
+            @include tab {
+                font-size: 1.2rem;
+            }
+
+            @include sp {
+                font-size: 1.2rem;
+                margin-left: 11px;
+                line-height: 1.5;
+
+                span {
+                    display: block;
+                    @include sp {
+                        margin-left: -10px;
+                        letter-spacing: -0.1px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__contact {
+        padding: 19px 51px 31px 19px;
+        border-left: 1px solid #80d6d0;
+        font-weight: 400;
+        font-feature-settings: "palt" 1;
+        @include tab {
+            width: 50%;
+            padding: 16px 10px 3px;
+            border-left: 1px solid #80d6d0;
+
+        }
+        @include sp {
+            order: 1;
+            text-align: center;
+            width: 100%;
+            padding: 30px 0 20px;
+            border-bottom: #91d6d1 1px solid;
+        }
+
+        &please {
+            font-size: 1.3rem;
+            text-align: left;
+            @include sp {
+                padding: 0 9px;
+                text-align: center;
+                line-height: 1.5;
+            }
+        }
+
+        &phone {
+            margin: 13px 0 18px;
+            font-size: 2.6rem;
+            line-height: 1;
+            letter-spacing: 0.2px;
+
+            span {
+                font-size: 4.1rem;
+                @include tab {
+                    font-size: 3rem;
+                }
+                @include sp {
+                    font-size: 1.8rem;
+                }
+            }
+            @include tab {
+                font-size: 1.6rem;
+            }
+            @include sp {
+                font-size: 1.4rem;
+                margin: 19px 0 23px;
+                text-align: center;
+                letter-spacing: 0;
+            }
+        }
+
+        &time {
+            width: 100%;
+            max-width: 314px;
+            padding: 3px 0 5px 50px;
+            background: #fff;
+            color: #00ada0;
+            font-weight: 700;
+            font-size: 1.4rem;
+            letter-spacing: 0.01em;
+            @include sp {
+                font-size: 1.3rem;
+                margin: 0 auto;
+                padding: 5px 3px 6px 0;
+                width: 85%;
+                letter-spacing: 0.02em;
+            }
+        }
+    }
+
+    &__btn {
+        width: 25.9%;
+        padding-top: 20px;
+        padding-left: 1px;
+        font-weight: 700;
+        font-size: 1.4rem;
+        text-align: center;
+        font-feature-settings: "palt" 1;
+
+        @include tab {
+            width: 23%;
+            font-size: 1.2rem;
+        }
+
+        @include sp {
+            order: 2;
+            font-size: 1.3rem;
+            padding-top: 19px;
+            padding-bottom: 5px;
+            max-width: 314px;
+            width: 85%;
+            
+        }
+
+        &link {
+            display: block;
+            margin-bottom: 18px;
+            padding: 15px 0 17px;
+            border: 2px solid #fff;
+            background-color: #00a99d;
+            @include sp {
+                margin-bottom: 14px;
+                padding: 7px 0 10px;
+            }
+
+            &2 {
+                @include sp {
+                    padding: 8px 0;
+                }
+            }
+
+            &:hover {
+                background-color: #fff;
+                color: #00ada0;
+                opacity: 1;
+                transition: all 0.3s linear;
+            }
+        }
+    }
+
+    &__copy {
+        background-color: #33bdb3;
+        padding: 21px 0 19px;
+        text-align: center;
+        color: #fff;
+        font-size: 1.3rem;
+        font-weight: 400;
+        @include tab {
+            font-size: 1.1rem;
+            padding: 15px 0;
+        }
+        @include sp {
+            font-size: 1.1rem;
+            padding: 13px 0 17px;
+        }
+    }
+}
+
+

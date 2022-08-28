@@ -1,0 +1,86 @@
+.c-news {
+    padding: 34px 0 170px;
+    @include sp {
+        padding: 20px 0 114px;
+    }
+
+    &__table {
+        max-width: 780px;
+        width: 91%;
+        margin: 0 auto;
+        margin-top: 13px;
+        font-feature-settings: "palt" 1;
+        @include sp {
+            margin-top: 16px;
+        }
+
+        tr {
+            border-bottom: 1px solid #ccc;
+            height: 66px;
+            overflow: hidden;
+            @include sp {
+                width: 100%;
+                display: inline-block;
+                height: auto;
+                padding: 10px 0 0;
+            }
+
+            &:nth-child(1) {
+                border-top: 1px solid #ccc;
+            }
+
+            &:hover {
+                opacity: 0.7;
+                cursor: pointer;
+                background-color: #00ada0;
+            }
+        
+        }
+        
+
+        th {
+            color: #781111;
+            font-weight: 400;
+            text-align: left;
+            padding-top: 2px;
+            @include sp {
+                font-size: 1.2rem;
+                width: 100%;
+                display: inline-block;
+            }
+        }
+
+        td {
+            font-size: 1.6rem;
+            padding: 14px;
+            letter-spacing: 0.01em;
+            @include sp {
+                font-size: 1.3rem;
+                font-weight: 500;
+                width: 100%;
+                display: inline-block;
+                padding: 7px 0 12px;
+            }
+        }   
+        
+    }
+
+    .l-newswrap::before {
+        content: "";
+        position: absolute;
+        width: 26%;
+        height: 83%;
+        background: url("assets/img/bg_newsbook.png") left center no-repeat;
+        background-size: contain;
+        left: -12.9%;
+        top: 19%;
+        z-index: -1;
+        @include bp(1460) {
+            left: unset;
+            right: 2%;
+        }
+        @include sp {
+            display: none;
+        }
+    }
+}

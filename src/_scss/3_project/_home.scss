@@ -1,0 +1,211 @@
+/*------------------------------------------------------------
+Css of home page
+------------------------------------------------------------*/
+.p-home {
+    //-------------------------------------------------------
+    .c-mainvisual {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+
+        &__draggable {
+            height: 700px;
+            @include sp {
+                height: 374px;
+            }
+
+            &item {
+                height: 100%;
+                width: 100%;
+
+                img {
+                    height: 700px;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                    @include tab {
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                    // @include sp {
+                    //     height: 374px;
+                    // }
+                    @include sp {
+                        height: 374px;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+
+        &__content {
+            position: absolute;
+            top: 73.7%;
+            left: 34.2%;
+            transform: translate(-50%, -50%);
+            @include tab {
+                left: 37.2%;
+            }
+
+            @include sp {
+                max-width: 100%;
+                width: 100%;
+                transform: translate(0);
+                top: unset;
+                left: 5%;
+                bottom: 25px;
+                text-align: center;
+            }
+        }
+
+        &__img {
+            margin-bottom: 35px;
+            @include sp {
+                margin-bottom: 34px;
+                width: 281px;
+            }
+        }
+
+        &__text {
+            font-size: 2rem;
+            font-weight: 700;
+            padding: 9px 100px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            border-radius: 3px;
+            font-feature-settings: "palt" 1;
+
+            @include sp {
+                font-size: 1.6rem;
+                max-width: 289px;
+                padding: 3px 0 6px;
+            }
+        }
+    }
+
+    .c-info {
+        padding-top: 50px;
+        padding-bottom: 80px;
+        background-image: url("assets/img/bg_info.jpg");
+        font-feature-settings: "palt" 1;
+
+        @include sp {
+            padding: 35px 0 43px;
+        }
+
+        &__sub {
+            margin-top: 44px;
+            text-align: center;
+            font-size: 1.4rem;
+            line-height: 1.8;
+            padding-right: 3px;
+            @include sp {
+                margin-top: 23px;
+            }
+        }
+
+        &__list {
+            margin-top: 45px;
+            margin-bottom: 20px;
+            @include sp {
+                margin-top: 23px;
+                margin-bottom: 48px;
+            }
+        }
+
+    }
+
+    .c-link {
+        width: 100%;
+        min-height: 418px;
+        background-color: #f8b616;
+        padding: 10px;
+        @include bp(1460) {
+            min-height: unset;
+        }
+        @include sp {
+            min-height: unset;
+            padding: 0 0 45px;
+        }
+
+        &__wrapper {
+            max-width: 1446px;
+            padding: 0 15px;
+            margin: 0 auto;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: unset;
+            @include sp {
+                flex-wrap: wrap;
+                padding: 0;
+            }
+        }
+
+        &__left {
+            @include bp(1460) {
+                width: 30%;
+            }
+            @include sp {
+                width: 50%;
+                margin-top: -10px;
+                order: 2;
+            }
+        }
+
+        &__mid {
+            position: absolute;
+            top: -75px;
+            left: 50%;
+            transform: translateX(-50%);
+            @include bp(1460) {
+                width: 40%;
+            }
+            @include sp {
+                position: relative;
+                width: 100%;
+                order: 1;
+                text-align: center;
+                top: -33px;
+            }
+
+            img {
+                @include sp {
+                    max-width: 75%;
+                }
+            }
+
+            &content {
+                margin-top: 40px;
+                text-align: center;
+                font-size: 1.7rem;
+                line-height: 1.47;
+                font-feature-settings: "palt" 1;
+                @include tab {
+                    font-size: 1.3rem;
+                }
+                @include sp {
+                    font-size: 1.3rem;
+                    margin: 22px 0 -1px;
+                }
+            }
+        }
+
+        &__right {
+            @include bp(1460) {
+                width: 30%;
+            }
+            @include sp {
+                width: 50%;
+                margin-top: -10px;
+                order: 2;
+            }
+        }
+    }
+
+   
+}

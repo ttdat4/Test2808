@@ -1,0 +1,58 @@
+//============================================
+// clearfix
+//============================================
+@mixin clear {
+    *zoom: 1;
+
+    &::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
+
+//============================================
+// breakpoint
+//============================================
+
+@mixin bp($breakpoint) {
+    @media (max-width: #{$breakpoint}px) and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media (max-width: 1023px) and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin sp {
+    @media only screen and (max-width: 767px) {
+        @content;
+    }
+}
+@mixin ie {
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        @content;
+    }
+}
+@mixin safari {
+    @supports (-webkit-touch-callout: none) {
+        @content;
+    }
+}
+
+.is-header {
+    position: fixed;
+    top: -52px;
+    padding: 0;
+}
+
+.is-headerwrap {
+    max-width: 100%;
+}
+
+
+
+

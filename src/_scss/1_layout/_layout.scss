@@ -1,0 +1,84 @@
+/* layout
+------------------------------------------------------------*/
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    line-height: 1;
+    font-size: 1.4rem;
+    font-weight: 400;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    color: #000;
+    @include sp {
+        min-width: 320px;
+    }
+}
+//-------------------------------------------------------
+
+//-------------------------------------------------------
+
+.l-headerwrap {
+    max-width: 1160px;
+    margin: 0 auto;
+
+}
+
+.is-headerwrap {
+    max-width: 100%;
+}
+
+.l-newswrap {
+    position: relative;
+    max-width: 1160px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.l-bannerwrap {
+    max-width: 1446px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.l-infowrap {
+    max-width: 1160px;
+    width: 96%;
+    margin: 0 auto;
+    padding: 0;
+    @include sp {
+        width: 100%;
+    }
+}
+
+.l-questionwrap {
+    max-width: 1160px;
+    margin: 0 auto;
+    min-height: 400px;
+    position: relative;
+    @include sp {
+        min-height: 300px;
+    }
+}
+
+.l-answerwrap {
+    max-width: 1920px;
+    margin: 0 auto;
+    @include bp(1460) {
+        max-width: 96%;
+    }
+}
+
+.l-operatingwrap {
+    max-width: 810px;
+    width: 96%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.l-contactwrap {
+    max-width: 780px;
+    width: 92%;
+    margin: 0 auto;
+}
+//-------------------------------------------------------
+
